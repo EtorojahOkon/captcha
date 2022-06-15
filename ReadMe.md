@@ -24,10 +24,10 @@ To, use, simply call the **initializeCaptcha** method on form submission with th
 - **callback**(optional) Callback function to be executed on successful captcha validation.
 Example
 ```javascript
-        document.getElementById("form").addEventListener("submit", function(e) {
-            e.preventDefault()
-            initializeCaptcha("./backend/captcha.php", 6, submitForm);
-        })
+    document.getElementById("form").addEventListener("submit", function(e) {
+        e.preventDefault()
+        initializeCaptcha("./backend/captcha.php", 6, submitForm);
+    })
 
     submitForm = () => {
         //submit form via Ajax or fetch
