@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Example</title>
+    <link rel="stylesheet" href="./frontend/css/captcha.css">
+</head>
+<body>
+    
+    <form id="form">
+        <input type="text" name="test" method="post"/>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="./frontend/js/captcha.js"></script>
+    <script>
+        submitForm = () => {
+            console.log("Captcha verification successful")
+        }
+
+        document.getElementById("form").addEventListener("submit", function(e) {
+            e.preventDefault()
+            initializeCaptcha("./backend/captcha.php", 3, submitForm);
+        })
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+.captcha-popup{
+    background-color: lightgray;
+    width: 400px;
+    z-index: 10000;
+    margin-top: 25vh;
+    border-radius: 10px;
+    padding: 12px 10px;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+.captcha-title{
+    font-size: 20px;
+}
+
+.captcha-canvas{
+    background-color: white;
+}
+
+.captcha-input{
+    padding: 12px;
+    background-color: lightgray;
+    border: 1px solid rgb(235, 231, 231);
+}
+
+.captcha-input:hover{
+    border: 1px dotted rgb(235, 231, 231);
+}
+
+.captcha-input:focus{
+    outline: none;
+}
+
+.captcha-pad{
+    padding-top: 10px;
+}
+
+.captcha-btn{
+    padding: 10px 15px;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.submit{
+    background-color: cornflowerblue;
+}
+
+.submit:hover{
+    background-color: lightgray;
+    border:  1px solid cornflowerblue;
+    color: cornflowerblue;
+}
+
+.cancel{
+    background-color: lightgray;
+}
+
+.pd-top{
+    padding-top: 10px;
+}
+
+
+/*
+Tablet and Smaller screens
+*/
+
+@media screen and (max-width : 600px) {
+    .captcha-popup{
+        width: 90%;
+        margin: 25vh 15px;
+    }
+}
+
+/*
+Desktop and Larger screens
+*/
+
+@media screen and (min-width : 600px) {
+    
+}
